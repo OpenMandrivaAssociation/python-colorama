@@ -8,6 +8,7 @@ Source0:	http://pypi.python.org/packages/source/c/%{oname}/%{oname}-%{version}.t
 License:	BSD
 Group:		Development/Python
 Url:		http://code.google.com/p/colorama/
+BuildRequires:	dos2unix
 BuildArch:	noarch
 
 %description
