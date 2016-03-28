@@ -1,7 +1,7 @@
 %define	oname	colorama
 
 Name:		python-%{oname}
-Version:	0.2.4
+Version:	0.3.7
 Release:	1
 Summary:	Cross-platform colored terminal text
 Source0:	http://pypi.python.org/packages/source/c/%{oname}/%{oname}-%{version}.tar.gz
@@ -29,7 +29,7 @@ Linux or Macs can now also work on Windows, simply by calling
 
 %prep
 %setup -q -n %{oname}-%{version}
-dos2unix README.txt
+dos2unix README.rst
 
 %build
 python setup.py build
@@ -38,7 +38,7 @@ python setup.py build
 python setup.py install --root=%{buildroot}
 
 %files
-%doc README.txt
+%doc README.rst
 %{py_puresitedir}/colorama/*.py*
 %{py_puresitedir}/colorama*.egg-info
 
