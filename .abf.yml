@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   colorama-0.3.7.tar.gz: 7310d6ddf680c524ad6b16f673a77a9defb5766e
+sources:
+  colorama-0.4.1.tar.gz: 8ab233ceaebc08970e04e35ee1e26a37f91278bc

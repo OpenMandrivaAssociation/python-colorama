@@ -1,10 +1,10 @@
 %define	oname	colorama
 
 Name:		python-%{oname}
-Version:	0.3.7
+Version:	0.4.1
 Release:	1
 Summary:	Cross-platform colored terminal text
-Source0:	http://pypi.python.org/packages/source/c/%{oname}/%{oname}-%{version}.tar.gz
+Source0:	https://pypi.python.org/packages/source/c/colorama/colorama-%{version}.tar.gz
 License:	BSD
 Group:		Development/Python
 Url:		http://code.google.com/p/colorama/
@@ -60,14 +60,14 @@ pushd %py2dir
 python2 setup.py build
 popd
 
-python setup.py build
+%py_build
 
 %install
 pushd %py2dir
 python2 setup.py install --root=%{buildroot}
 popd
 
-python setup.py install --root=%{buildroot}
+%py_install
 
 %files
 %doc README.rst
@@ -78,4 +78,3 @@ python setup.py install --root=%{buildroot}
 %doc README.rst
 %{py2_puresitedir}/colorama/*.py*
 %{py2_puresitedir}/colorama*.egg-info
-
