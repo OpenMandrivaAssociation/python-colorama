@@ -1,8 +1,8 @@
 %define oname colorama
 
 Name:		python-%{oname}
-Version:	0.4.4
-Release:	3
+Version:	0.4.6
+Release:	1
 Summary:	Cross-platform colored terminal text
 Source0:	http://pypi.python.org/packages/source/c/%{oname}/%{oname}-%{version}.tar.gz
 License:	BSD
@@ -10,6 +10,9 @@ Group:		Development/Python
 Url:		http://code.google.com/p/colorama/
 BuildRequires:	dos2unix
 BuildRequires:	python-setuptools
+BuildRequires:  python-wheel
+BuildRequires:  python-pip
+BuildRequires:  python3dist(hatchling)
 BuildArch:	noarch
 
 %description
@@ -43,4 +46,5 @@ dos2unix README.rst
 %doc README.rst
 %dir %{py_puresitedir}/colorama
 %{py_puresitedir}/colorama/*.py*
-%{py_puresitedir}/colorama*.egg-info
+%{python_sitelib}/colorama-%{version}.dist-info/
+%{python_sitelib}/colorama/
