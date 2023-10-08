@@ -12,6 +12,7 @@ BuildRequires:	dos2unix
 BuildRequires:	python-setuptools
 BuildRequires:  python-wheel
 BuildRequires:  python-pip
+BuildRequires:  python3dist(hatchling)
 BuildArch:	noarch
 
 %description
