@@ -10,6 +10,8 @@ Group:		Development/Python
 Url:		http://code.google.com/p/colorama/
 BuildRequires:	dos2unix
 BuildRequires:	python-setuptools
+BuildRequires:  python-wheel
+BuildRequires:  python-pip
 BuildArch:	noarch
 
 %description
