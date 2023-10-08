@@ -44,7 +44,5 @@ dos2unix README.rst
 
 %files
 %doc README.rst
-%dir %{py_puresitedir}/colorama
-%{py_puresitedir}/colorama/*.py*
 %{python_sitelib}/colorama-%{version}.dist-info/
 %{python_sitelib}/colorama/
