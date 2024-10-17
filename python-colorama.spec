@@ -7,7 +7,7 @@ Summary:	Cross-platform colored terminal text
 Source0:	http://pypi.python.org/packages/source/c/%{oname}/%{oname}-%{version}.tar.gz
 License:	BSD
 Group:		Development/Python
-Url:		http://code.google.com/p/colorama/
+Url:		https://code.google.com/p/colorama/
 BuildRequires:	dos2unix
 BuildRequires:	python-setuptools
 BuildRequires:  python-wheel
