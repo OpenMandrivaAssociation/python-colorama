@@ -2,7 +2,7 @@
 
 Name:		python-%{oname}
 Version:	0.4.6
-Release:	1
+Release:	2
 Summary:	Cross-platform colored terminal text
 Source0:	http://pypi.python.org/packages/source/c/%{oname}/%{oname}-%{version}.tar.gz
 License:	BSD
